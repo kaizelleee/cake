@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>chocy cake</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="box-wrap">
+  <div class="click-box" id="box" onclick="reveal()" role="button" tabindex="0" aria-label="Click to reveal surprise">
+    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1">
+      <rect x="8" y="30" width="56" height="36" rx="8" fill="#c084e8"/>
+      <rect x="8" y="22" width="56" height="14" rx="6" fill="#a855d4"/>
+      <rect x="32" y="22" width="8" height="44" rx="4" fill="#f0abfc"/>
+      <rect x="8" y="34" width="56" height="8" rx="4" fill="#f0abfc"/>
+      <ellipse cx="28" cy="22" rx="14" ry="9" fill="#f0abfc" transform="rotate(-20 28 22)"/>
+      <ellipse cx="44" cy="22" rx="14" ry="9" fill="#e879f9" transform="rotate(20 44 22)"/>
+      <circle cx="36" cy="22" r="7" fill="#f5d0fe"/>
+    </svg>
+    <p class="box-label">Click me!</p>
+  </div>
+
+  <div class="scene" id="scene">
+    <svg width="100%" viewBox="0 0 680 560" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>Chocolate cake for Ree</title>
+      <desc>Cute cartoon chocolate cake with chunky outlines, light brown ganache drips, and caramel rosettes</desc>
+
+      <!-- PLATE -->
+      <ellipse cx="340" cy="440" rx="230" ry="28" fill="#7a5030"/>
+      <ellipse cx="340" cy="435" rx="230" ry="28" fill="#f5f0ea"/>
+      <ellipse cx="340" cy="431" rx="218" ry="22" fill="#faf8f4"/>
+
+      <!-- CAKE OUTER BODY -->
+      <polygon points="110,160 570,160 570,400 110,400" fill="#6b3e22"/>
+
+      <!-- BOTTOM cake crumb layer -->
+      <polygon points="114,310 566,310 566,396 114,396" fill="#3d200a"/>
+      <circle cx="160" cy="340" r="6" fill="#4a2810" opacity="0.7"/>
+      <circle cx="210" cy="355" r="5" fill="#4a2810" opacity="0.6"/>
+      <circle cx="260" cy="335" r="7" fill="#4a2810" opacity="0.7"/>
+      <circle cx="320" cy="352" r="5" fill="#4a2810" opacity="0.6"/>
+      <circle cx="375" cy="338" r="6" fill="#4a2810" opacity="0.65"/>
+      <circle cx="430" cy="356" r="5" fill="#4a2810" opacity="0.6"/>
+      <circle cx="490" cy="340" r="6" fill="#4a2810" opacity="0.65"/>
+      <circle cx="530" cy="358" r="4" fill="#4a2810" opacity="0.55"/>
+      <circle cx="185" cy="375" r="4" fill="#4a2810" opacity="0.5"/>
+      <circle cx="295" cy="368" r="5" fill="#4a2810" opacity="0.55"/>
+      <circle cx="410" cy="372" r="4" fill="#4a2810" opacity="0.5"/>
+      <circle cx="510" cy="376" r="4" fill="#4a2810" opacity="0.5"/>
+
+      <!-- FROSTING layer 1 -->
+      <polygon points="114,292 566,292 566,315 114,315" fill="#a06030" stroke="#6b3e22" stroke-width="5" stroke-linejoin="round"/>
+
+      <!-- MIDDLE cake crumb layer -->
+      <polygon points="114,195 566,195 566,296 114,296" fill="#3d200a"/>
+      <circle cx="150" cy="220" r="6" fill="#4a2810" opacity="0.65"/>
+      <circle cx="220" cy="238" r="5" fill="#4a2810" opacity="0.6"/>
+      <circle cx="290" cy="218" r="7" fill="#4a2810" opacity="0.65"/>
+      <circle cx="360" cy="240" r="5" fill="#4a2810" opacity="0.6"/>
+      <circle cx="430" cy="222" r="6" fill="#4a2810" opacity="0.65"/>
+      <circle cx="500" cy="236" r="5" fill="#4a2810" opacity="0.6"/>
+      <circle cx="540" cy="218" r="4" fill="#4a2810" opacity="0.55"/>
+      <circle cx="175" cy="262" r="4" fill="#4a2810" opacity="0.5"/>
+      <circle cx="320" cy="268" r="5" fill="#4a2810" opacity="0.55"/>
+      <circle cx="460" cy="264" r="4" fill="#4a2810" opacity="0.5"/>
+
+      <!-- FROSTING layer 2 -->
+      <polygon points="114,178 566,178 566,200 114,200" fill="#a06030" stroke="#6b3e22" stroke-width="5" stroke-linejoin="round"/>
+
+      <!-- TOP cake crumb layer -->
+      <polygon points="114,165 566,165 566,183 114,183" fill="#3d200a"/>
+
+      <!-- GANACHE top coat -->
+      <polygon points="114,148 566,148 566,170 114,170" fill="#7a4820"/>
+
+      <!-- GANACHE DRIPS -->
+      <path d="M148,165 Q146,195 147,225 Q148,238 146,248" stroke="#7a4820" stroke-width="18" stroke-linecap="round" fill="none"/>
+      <path d="M200,162 Q198,186 199,204 Q200,212 199,218" stroke="#7a4820" stroke-width="16" stroke-linecap="round" fill="none"/>
+      <path d="M258,160 Q256,188 257,210 Q258,222 257,232" stroke="#7a4820" stroke-width="18" stroke-linecap="round" fill="none"/>
+      <path d="M318,158 Q316,182 317,198 Q318,206 317,212" stroke="#7a4820" stroke-width="16" stroke-linecap="round" fill="none"/>
+      <path d="M378,158 Q376,185 377,206 Q378,218 377,228" stroke="#7a4820" stroke-width="18" stroke-linecap="round" fill="none"/>
+      <path d="M438,160 Q436,184 437,200 Q438,208 437,214" stroke="#7a4820" stroke-width="16" stroke-linecap="round" fill="none"/>
+      <path d="M498,162 Q496,190 497,214 Q498,228 497,238" stroke="#7a4820" stroke-width="18" stroke-linecap="round" fill="none"/>
+      <path d="M544,165 Q542,188 543,204 Q544,212 543,218" stroke="#7a4820" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+      <!-- drip blob tips -->
+      <circle cx="146" cy="250" r="12" fill="#7a4820"/>
+      <circle cx="199" cy="220" r="10" fill="#7a4820"/>
+      <circle cx="257" cy="234" r="12" fill="#7a4820"/>
+      <circle cx="317" cy="214" r="10" fill="#7a4820"/>
+      <circle cx="377" cy="230" r="12" fill="#7a4820"/>
+      <circle cx="437" cy="216" r="10" fill="#7a4820"/>
+      <circle cx="497" cy="240" r="12" fill="#7a4820"/>
+      <circle cx="543" cy="220" r="9" fill="#7a4820"/>
+
+      <!-- CAKE BODY OUTLINE -->
+      <polygon points="110,148 570,148 570,402 110,402" fill="none" stroke="#6b3e22" stroke-width="9" stroke-linejoin="round"/>
+
+      <!-- TOP SURFACE ellipse -->
+      <ellipse cx="340" cy="148" rx="230" ry="32" fill="#7a4820" stroke="#6b3e22" stroke-width="9"/>
+      <ellipse cx="290" cy="138" rx="60" ry="14" fill="#a06030" opacity="0.35" transform="rotate(-8 290 138)"/>
+
+      <!-- CHOCOLATE SHARDS -->
+      <polygon points="270,128 280,114 292,126 282,138" fill="#8a5228" stroke="#6b3e22" stroke-width="2"/>
+      <polygon points="300,120 312,108 322,120 311,130" fill="#8a5228" stroke="#6b3e22" stroke-width="2"/>
+      <polygon points="335,118 345,106 356,119 345,129" fill="#8a5228" stroke="#6b3e22" stroke-width="2"/>
+      <polygon points="365,122 376,112 386,124 375,132" fill="#8a5228" stroke="#6b3e22" stroke-width="2"/>
+      <polygon points="258,135 266,126 274,136 266,144" fill="#8a5228" stroke="#6b3e22" stroke-width="2"/>
+      <polygon points="390,130 398,122 406,131 398,140" fill="#8a5228" stroke="#6b3e22" stroke-width="2"/>
+
+      <!-- ROSETTE 1 -->
+      <g transform="translate(178,126)">
+        <circle r="22" fill="#c8743a" stroke="#6b3e22" stroke-width="5"/>
+        <circle cx="-8" cy="-6" r="14" fill="#e0915a" stroke="#6b3e22" stroke-width="4"/>
+        <circle cx="8" cy="6" r="12" fill="#c8743a" stroke="#6b3e22" stroke-width="3.5"/>
+        <circle cx="-3" cy="4" r="8" fill="#e8a870" stroke="#6b3e22" stroke-width="3"/>
+        <circle cx="4" cy="-5" r="6" fill="#f0b880" stroke="#6b3e22" stroke-width="3"/>
+        <circle r="4" fill="#f8d0a0"/>
+      </g>
+
+      <!-- ROSETTE 2 -->
+      <g transform="translate(248,106)">
+        <circle r="22" fill="#c8743a" stroke="#6b3e22" stroke-width="5"/>
+        <circle cx="-8" cy="-6" r="14" fill="#e0915a" stroke="#6b3e22" stroke-width="4"/>
+        <circle cx="8" cy="6" r="12" fill="#c8743a" stroke="#6b3e22" stroke-width="3.5"/>
+        <circle cx="-3" cy="4" r="8" fill="#e8a870" stroke="#6b3e22" stroke-width="3"/>
+        <circle cx="4" cy="-5" r="6" fill="#f0b880" stroke="#6b3e22" stroke-width="3"/>
+        <circle r="4" fill="#f8d0a0"/>
+      </g>
+
+      <!-- ROSETTE 3 (center) -->
+      <g transform="translate(320,100)">
+        <circle r="24" fill="#c8743a" stroke="#6b3e22" stroke-width="5"/>
+        <circle cx="-9" cy="-7" r="15" fill="#e0915a" stroke="#6b3e22" stroke-width="4"/>
+        <circle cx="9" cy="7" r="13" fill="#c8743a" stroke="#6b3e22" stroke-width="3.5"/>
+        <circle cx="-4" cy="5" r="9" fill="#e8a870" stroke="#6b3e22" stroke-width="3"/>
+        <circle cx="5" cy="-6" r="6" fill="#f0b880" stroke="#6b3e22" stroke-width="3"/>
+        <circle r="4" fill="#f8d0a0"/>
+      </g>
+
+      <!-- ROSETTE 4 -->
+      <g transform="translate(394,106)">
+        <circle r="22" fill="#c8743a" stroke="#6b3e22" stroke-width="5"/>
+        <circle cx="-8" cy="-6" r="14" fill="#e0915a" stroke="#6b3e22" stroke-width="4"/>
+        <circle cx="8" cy="6" r="12" fill="#c8743a" stroke="#6b3e22" stroke-width="3.5"/>
+        <circle cx="-3" cy="4" r="8" fill="#e8a870" stroke="#6b3e22" stroke-width="3"/>
+        <circle cx="4" cy="-5" r="6" fill="#f0b880" stroke="#6b3e22" stroke-width="3"/>
+        <circle r="4" fill="#f8d0a0"/>
+      </g>
+
+      <!-- ROSETTE 5 -->
+      <g transform="translate(464,126)">
+        <circle r="22" fill="#c8743a" stroke="#6b3e22" stroke-width="5"/>
+        <circle cx="-8" cy="-6" r="14" fill="#e0915a" stroke="#6b3e22" stroke-width="4"/>
+        <circle cx="8" cy="6" r="12" fill="#c8743a" stroke="#6b3e22" stroke-width="3.5"/>
+        <circle cx="-3" cy="4" r="8" fill="#e8a870" stroke="#6b3e22" stroke-width="3"/>
+        <circle cx="4" cy="-5" r="6" fill="#f0b880" stroke="#6b3e22" stroke-width="3"/>
+        <circle r="4" fill="#f8d0a0"/>
+      </g>
+
+      <!-- CRUMBS on plate -->
+      <circle cx="174" cy="444" r="5" fill="#6b3e22"/>
+      <circle cx="200" cy="452" r="4" fill="#6b3e22"/>
+      <circle cx="155" cy="455" r="3" fill="#6b3e22"/>
+      <circle cx="470" cy="446" r="5" fill="#6b3e22"/>
+      <circle cx="500" cy="453" r="3" fill="#6b3e22"/>
+      <circle cx="520" cy="444" r="4" fill="#6b3e22"/>
+      <circle cx="300" cy="458" r="3" fill="#6b3e22"/>
+      <circle cx="390" cy="456" r="4" fill="#6b3e22"/>
+      <polygon points="220,448 228,440 234,448 226,454" fill="#6b3e22"/>
+      <polygon points="440,444 448,436 454,445 446,451" fill="#6b3e22"/>
+
+      <!-- PLATE OUTLINE -->
+      <ellipse cx="340" cy="431" rx="218" ry="22" fill="none" stroke="#6b3e22" stroke-width="6"/>
+    </svg>
+
+    <p class="caption">thank u for being the bestest friend ever! :D</p>
+    <button class="reset-btn" onclick="reset()">hide again~</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

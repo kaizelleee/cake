@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3e8ff;
+  font-family: sans-serif;
+}
+
+.box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  padding: 2rem 0;
+}
+
+.click-box {
+  width: 230px;
+  height: 230px;
+  background: linear-gradient(145deg, #e8d5f5, #d4b0ef);
+  border: 2.5px solid #b47fd4;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  gap: 10px;
+  user-select: none;
+  box-shadow: 0 4px 24px #c084e840;
+  position: relative;
+  overflow: hidden;
+}
+
+.click-box::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 80px;
+  height: 80px;
+  background: #e9bcf8;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.click-box::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  background: #c8a0e8;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.click-box:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 32px #c084e860;
+}
+
+.click-box:active {
+  transform: scale(0.97);
+}
+
+.box-label {
+  margin: 0;
+  font-size: 15px;
+  color: #7c3aad;
+  font-weight: 500;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.scene {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.scene.visible {
+  display: flex;
+  animation: popIn 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.caption {
+  font-size: 15px;
+  color: #6b3e22;
+  margin: 0;
+  background: #f3e8ff;
+  border-radius: 20px;
+  padding: 6px 18px;
+  border: 1px solid #d8b4fe;
+}
+
+.reset-btn {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #9333ea;
+  background: #f3e8ff;
+  border: 1px solid #d8b4fe;
+  border-radius: 20px;
+  padding: 7px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.12s;
+}
+
+.reset-btn:hover {
+  background: #e9d5ff;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.6) rotate(-6deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
